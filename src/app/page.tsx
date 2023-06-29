@@ -20,7 +20,7 @@ function findPassageByDate(jsonString: string): { Date: string; Passage: string 
  const today: Date = new Date();
 
  // Subtract one day from the current date
- today.setDate(today.getDate() - 1);
+ //  today.setDate(today.getDate() - 1);
 
  // Get the formatted date as YYYY-MM-DD
  const formattedDate: string = today.toISOString().split("T")[0];
