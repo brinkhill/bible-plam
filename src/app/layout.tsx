@@ -6,6 +6,7 @@ const dmSans = DM_Sans({ weight: "400", subsets: ["latin"] });
 export const metadata = {
  title: "Bible Plan",
  description: "A reminder tool for my wife and I",
+ manifest: `https://bible.brinkley.dev/site.webmanifest`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
