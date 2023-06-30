@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -7,6 +9,12 @@ export default function Home() {
    <div>
     <p className={styles.date}>{result?.Date}</p>
     <p className={styles.scripture}>{result?.Passage}</p>
+    {/* <div>
+     <p>previous days:</p>
+     <div>
+
+     </div>
+    </div> */}
    </div>
   </main>
  );
@@ -18,9 +26,6 @@ function findPassageByDate(jsonString: string): { Date: string; Passage: string 
 
  // Get today's date
  const today: Date = new Date();
-
- // Subtract one day from the current date
- //  today.setDate(today.getDate() - 1);
 
  // Get the formatted date as YYYY-MM-DD
  const formattedDate: string = today.toISOString().split("T")[0];
