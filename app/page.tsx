@@ -1,20 +1,12 @@
 "use client";
 
-import styles from "./page.module.css";
-
 export default function Home() {
  const result = findPassageByDate(jsonString);
  return (
-  <main className={styles.main}>
+  <main>
    <div>
-    <p className={styles.date}>{result?.Date}</p>
-    <p className={styles.scripture}>{result?.Passage}</p>
-    {/* <div>
-     <p>previous days:</p>
-     <div>
-
-     </div>
-    </div> */}
+    <p>{result?.Date}</p>
+    <p>{result?.Passage}</p>
    </div>
   </main>
  );

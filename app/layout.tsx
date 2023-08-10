@@ -1,7 +1,7 @@
 import "./globals.css";
-import { DM_Sans } from "next/font/google";
+import { Merriweather } from "next/font/google";
 
-const dmSans = DM_Sans({ weight: "400", subsets: ["latin"] });
+const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
  title: "Bible Plan",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
  return (
   <html lang="en">
-   <body className={dmSans.className}>{children}</body>
+   <body className={merriweather.className}>{children}</body>
   </html>
  );
 }
