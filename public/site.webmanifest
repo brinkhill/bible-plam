@@ -1,9 +1,7 @@
 {
+ "name": "Bible Plan",
+ "short_name": "Bible Plan",
  "theme_color": "#FFFFFF",
  "background_color": "#FFFFFF",
- "display": "fullscreen",
- "scope": "/",
- "start_url": "/",
- "name": "Bible Plan",
- "short_name": "Bible Plan"
+ "display": "standalone"
 }
