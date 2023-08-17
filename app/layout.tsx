@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-const borel = Josefin_Sans({ subsets: ["latin"], weight: ["600"] });
+const inter = Inter({ subsets: ["latin"], weight: ["600"] });
 
 export const metadata: Metadata = {
  title: "Create Next App",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
  return (
   <html lang="en">
-   <body className={borel.className}>
+   <body className={inter.className}>
     <Header />
     {children}
     <Footer />

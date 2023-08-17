@@ -3,9 +3,20 @@
 export default function Gist() {
  const result = findPassageByDate(jsonString);
  return (
-  <section className="flex justify-center">
-   <p>{result?.Date}</p>
-   <p>{result?.Passage}</p>
+  <section className="flex flex-col justify-evenly h-4/6 ">
+   <div className="h-1/2 pt-0 pb-0 p-3 flex flex-col justify-center place-items-center">
+    <p className="text-lg">Today's Reading</p>
+    <div className="h-2/3 border-2 w-full flex flex-col place-items-center justify-center rounded bg-muted">
+     <p className="text-4xl">{result?.Passage}</p>
+     <p className="text-muted-foreground">{result?.Date}</p>
+    </div>
+   </div>
+   <div className="h-1/2 pt-0 pb-0 p-3 flex flex-col justify-center place-items-center">
+    <p className="text-lg">Previous Readings</p>
+    <div className="h-2/3 border-2 w-full flex place-items-center justify-center rounded">
+     <p className="text-4xl text-muted-foreground">COMING SOON</p>
+    </div>
+   </div>
   </section>
  );
 }
