@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["600"] });
 
 export const metadata: Metadata = {
  title: "Bible Plan",
+ manifest: `https://bible.brinkley.dev/site.webmanifest`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
