@@ -1,13 +1,13 @@
 {
- "name": "Bible Plan",
- "short_name": "",
- "theme_color": "#FFFFFF",
- "background_color": "#FFFFFF",
- "display": "standalone",
- "icons": [
-  {
-   "src": "icon.png",
-   "sizes": "any"
-  }
- ]
+  "name": "Bible Plan",
+  "short_name": "",
+  "theme_color": "#f7f8fc",
+  "background_color": "#f7f8fc",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "any"
+    }
+  ]
 }
