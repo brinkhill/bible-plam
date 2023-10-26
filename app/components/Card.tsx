@@ -1,10 +1,10 @@
 import FormattedDate from "./Date";
 
 export default async function Card() {
-  const response = await fetch(`https://bible.brinkley.dev/api/passage/`, {
-    cache: "force-cache",
-  });
-  const result = await response.json();
+  // const response = await fetch(`https://bible.brinkley.dev/api/passage/`, {
+  //   cache: "force-cache",
+  // });
+  // const result = await response.json();
   return (
     // <div className="rounded-lg bg-gradient-to-br from-blue-400 to-blue-500 p-3 text-background shadow-lg shadow-blue-400">
     //   <div className="flex justify-between">
