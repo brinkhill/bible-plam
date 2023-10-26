@@ -17,10 +17,10 @@ const openRunde = localFont({
       path: "./fonts/OpenRunde-Medium.woff",
       weight: "500",
     },
-    {
-      path: "./fonts/OpenRunde-SemiBold.woff",
-      weight: "600",
-    },
+    // {
+    //   path: "./fonts/OpenRunde-SemiBold.woff",
+    //   weight: "600",
+    // },
   ],
 });
 
