@@ -1,13 +1,11 @@
+import Greeting from "./Greeting";
+import SettingsButton from "./SettingsButton";
 import FormattedDate from "./Date";
-import Greeting from "./greeting";
-
 export default function Header() {
   return (
-    <section className="justify-left flex h-1/6 flex-col justify-between border-b p-5">
+    <section className="flex h-1/6 items-center justify-between p-5 font-bold">
       <Greeting />
-      <div>
-        <FormattedDate />
-      </div>
+      <SettingsButton />
     </section>
   );
 }

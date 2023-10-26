@@ -1,10 +1,33 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"], weight: ["600"] });
+import localFont from "next/font/local";
+const openRunde = localFont({
+  src: [
+    {
+      path: "../public/fonts/OpenRunde-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/OpenRunde-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/OpenRunde-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/OpenRunde-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Bible Plan",
@@ -18,10 +41,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <meta name="theme-color" content="f7f8fc" />
+      <body className={openRunde.className}>
         <Header />
         {children}
-
         <Footer />
       </body>
     </html>

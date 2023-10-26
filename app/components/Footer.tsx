@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <section className="basis-1/7 flex flex-col place-items-center justify-center bg-white bg-opacity-30 p-5 text-center backdrop-blur-lg backdrop-filter">
-      <p className="text-lg">
+    <section className="flex h-1/6 flex-col place-items-center justify-center p-5 text-center">
+      <p className="text-md font-semibold">
         Your word is a lamp to my feet <br />
         and a light to my path.
       </p>
-      <p className="">Psalm 119:105</p>
+      <p className="text-blue-500">Psalm 119:105</p>
     </section>
   );
 }

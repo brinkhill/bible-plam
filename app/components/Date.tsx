@@ -4,7 +4,7 @@ export default function FormattedDate() {
   const today: Date = new Date();
   const formattedDate: string = formatDate(today);
 
-  return <p>{formattedDate}</p>;
+  return <span className="font-semibold">{formattedDate}</span>;
 }
 
 function formatDate(date: Date): string {
@@ -38,5 +38,5 @@ function formatDate(date: Date): string {
       ? "rd"
       : "th";
 
-  return `${month} ${day}${suffix}, ${year}`;
+  return `${month} ${day}${suffix}`;
 }
