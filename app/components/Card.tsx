@@ -1,7 +1,7 @@
 import FormattedDate from "./Date";
 
 export default async function Card() {
-  const response = await fetch(`http://localhost:3000/api/passage/`, {
+  const response = await fetch(`https://bible.brinkley.dev/api/passage/`, {
     cache: "force-cache",
   });
   const result = await response.json();
