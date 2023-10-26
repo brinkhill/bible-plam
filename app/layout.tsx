@@ -6,19 +6,19 @@ import localFont from "next/font/local";
 const openRunde = localFont({
   src: [
     {
-      path: "./fonts/OpenRunde-Regular.woff2",
+      path: "./fonts/OpenRunde-Regular.woff",
       weight: "400",
     },
     {
-      path: "./fonts/OpenRunde-Bold.woff2",
+      path: "./fonts/OpenRunde-Bold.woff",
       weight: "700",
     },
     {
-      path: "./fonts/OpenRunde-Medium.woff2",
+      path: "./fonts/OpenRunde-Medium.woff",
       weight: "500",
     },
     {
-      path: "./fonts/OpenRunde-SemiBold.woff2",
+      path: "./fonts/OpenRunde-SemiBold.woff",
       weight: "600",
     },
   ],
