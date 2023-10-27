@@ -12,17 +12,19 @@ function getDate(isTomorrow: boolean) {
 export default async function SmallCard(props: {
   variant: "yesterday" | "tomorrow";
 }) {
-  let date, when, color;
+  let date, when, color, textColor;
   switch (props.variant) {
     case "yesterday":
       date = getDate(false);
       when = "Yesterday's";
-      color = "something";
+      color = "from-yellow-400 to-yellow-500 shadow-yellow-400";
+      textColor = "text-gray-100";
       break;
     case "tomorrow":
       date = getDate(true);
       when = "Tomorrow's";
-      color = "something";
+      color = "from-red-400 to-red-500 shadow-red-400";
+      textColor = "text-red-100";
       break;
   }
 
@@ -34,9 +36,11 @@ export default async function SmallCard(props: {
   );
   const result = await response.json();
   return (
-    <div className="rounded-lg bg-gradient-to-br from-blue-400 to-blue-500 p-3 text-background shadow-md shadow-blue-400">
+    <div
+      className={`rounded-lg bg-gradient-to-br p-3 text-background shadow-md ${color}`}
+    >
       <div className="flex justify-between">
-        <span className="text-sm text-blue-200">{when} Reading</span>
+        <span className={`text-sm ${textColor}`}>{when} Reading</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
