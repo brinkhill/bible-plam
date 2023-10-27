@@ -6,7 +6,7 @@ export default function Greeting() {
 }
 
 function getGreeting() {
-  var hour = new Date().getHours();
+  const hour = new Date().getHours();
   let greeting;
   if (hour >= 11 && hour < 17) {
     greeting = "Good Afternoon!";
