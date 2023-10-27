@@ -1,11 +1,15 @@
 import Greeting from "./Greeting";
 import SettingsButton from "./SettingsButton";
-import FormattedDate from "./Date";
+import RefreshButton from "./RefreshButton";
 export default function Header() {
   return (
-    <section className="flex h-1/6 items-center justify-between p-5 font-bold">
+    <section className="flex h-1/6 items-center justify-between px-5 font-bold">
       <Greeting />
-      <SettingsButton />
+      {/* <SettingsButton /> */}
+      <div className="flex">
+        <RefreshButton />
+        <SettingsButton />
+      </div>
     </section>
   );
 }

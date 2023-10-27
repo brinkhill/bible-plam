@@ -1,22 +1,16 @@
 import Card from "./components/Card";
+import Tracker from "./components/Tracker";
+import SmallCard from "./components/SmallCard";
 
 export default async function Main() {
   return (
-    <section className="h-4/6 p-5 font-bold">
+    <section className="flex h-4/6 flex-col justify-evenly px-5 font-bold">
       <Card />
-      {/* <div className="flex h-1/2 flex-col place-items-center justify-center p-3 pb-0 pt-0">
-        <p className="text-lg">Today's Reading</p>
-        <div className="flex h-2/3 w-full flex-col place-items-center justify-center rounded border-2 bg-muted">
-          <p className="text-4xl">{result?.Passage}</p>
-          <p className="text-muted-foreground">{result?.Date}</p>
-        </div>
+      <Tracker />
+      <div className="grid w-full grid-cols-2  gap-2 ">
+        <SmallCard variant="yesterday" />
+        <SmallCard variant="tomorrow" />
       </div>
-      <div className="flex h-1/2 flex-col place-items-center justify-center p-3 pb-0 pt-0">
-        <p className="text-lg">Previous Readings</p>
-        <div className="flex h-2/3 w-full place-items-center justify-center rounded border-2">
-          <p className="text-4xl text-muted-foreground">COMING SOON</p>
-        </div>
-      </div> */}
     </section>
   );
 }

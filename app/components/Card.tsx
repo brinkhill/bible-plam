@@ -6,9 +6,9 @@ export default async function Card() {
   });
   const result = await response.json();
   return (
-    <div className="rounded-lg bg-gradient-to-br from-blue-400 to-blue-500 p-3 text-background shadow-lg shadow-blue-400">
+    <div className="rounded-lg bg-gradient-to-br from-blue-400 to-blue-500 p-3 text-background shadow-md shadow-blue-400">
       <div className="flex justify-between">
-        <span className="text-blue-200">Today's Readings</span>
+        <span className="text-blue-200">Today's Reading</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
