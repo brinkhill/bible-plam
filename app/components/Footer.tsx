@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <section className="flex h-1/6 flex-col place-items-center justify-center px-5 text-center">
+    <section className="flex h-[15svh] flex-col place-items-center justify-center px-5 text-center">
       <p className="text-md font-semibold">
         Your word is a lamp to my feet <br />
         and a light to my path.
