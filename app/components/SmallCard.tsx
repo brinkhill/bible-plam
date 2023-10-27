@@ -37,7 +37,7 @@ export default async function SmallCard(props: {
   const result = await response.json();
   return (
     <div
-      className={`rounded-lg bg-gradient-to-br p-3 text-background shadow-md ${color}`}
+      className={`flex flex-col justify-between rounded-lg bg-gradient-to-br p-3 text-background shadow-md ${color}`}
     >
       <div className="flex justify-between">
         <span className={`text-sm ${textColor}`}>{when} Reading</span>
@@ -57,7 +57,7 @@ export default async function SmallCard(props: {
         </svg>
       </div>
       <div>
-        <div className="flex flex-col  pt-8">
+        <div className="flex flex-col pt-8">
           <span className="text-2xl">{result?.Passage}</span>
         </div>
       </div>

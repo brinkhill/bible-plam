@@ -6,7 +6,7 @@ export default async function Card() {
   });
   const result = await response.json();
   return (
-    <div className="rounded-lg bg-gradient-to-br from-blue-400 to-blue-500 p-3 text-background shadow-md shadow-blue-400">
+    <div className="flex flex-col justify-between rounded-lg bg-gradient-to-br from-blue-400 to-blue-500 p-3 text-background shadow-md shadow-blue-400">
       <div className="flex justify-between">
         <span className="text-blue-200">Today's Reading</span>
         <svg
@@ -30,7 +30,7 @@ export default async function Card() {
         </svg>
       </div>
       <div>
-        <div className="flex flex-col justify-center pt-8">
+        <div className="flex flex-col justify-end pt-8">
           <FormattedDate />
           <span className="text-4xl">{result?.Passage}</span>
         </div>
