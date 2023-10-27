@@ -1,7 +1,7 @@
 import FormattedDate from "./Date";
 
 export default async function Card() {
-  const response = await fetch(`https://bible.brinkley.dev/api/passage/`, {
+  const response = await fetch(`https://bible.brinkley.dev/api/passage`, {
     cache: "force-cache",
   });
   const result = await response.json();
@@ -33,6 +33,7 @@ export default async function Card() {
         <div className="flex flex-col justify-center pt-8">
           <FormattedDate />
           <span className="text-4xl">{result?.Passage}</span>
+          <span className="text-4xl">{result?.Date}</span>
         </div>
       </div>
     </div>
