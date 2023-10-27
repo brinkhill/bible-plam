@@ -19,3 +19,7 @@ body {
   height: 100svh;
   font-weight: 600;
 }
+
+.webkit-select {
+  -webkit-tap-highlight-color: transparent;
+}

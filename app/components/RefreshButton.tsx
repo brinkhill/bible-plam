@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 export default function RefreshButton() {
   const router = useRouter();
   return (
-    <div className="pr-3 drop-shadow-sm">
+    <div className="select-none pr-3 drop-shadow-sm">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="36"
@@ -16,7 +16,7 @@ export default function RefreshButton() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="rounded-full bg-gray-200 p-1 text-gray-600 transition active:rotate-90"
+        className="webkit-select rounded-full bg-gray-200 p-1 text-gray-600 transition active:rotate-90"
       >
         <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
         <path d="M21 3v5h-5" />
