@@ -19,7 +19,7 @@ function Avatar({ src, alt, width, height, count }: AvatarProps) {
 
   return (
     <div
-      className={` webkit-select relative flex h-28 w-28 items-center justify-center rounded-full p-2`}
+      className={` webkit-select relative flex h-28 w-28 items-center justify-center rounded-full bg-gray-300 p-2`}
       // onClick={handleClick}
       // ${ clicked ? "bg-green-300" : "bg-gray-300" }
     >
