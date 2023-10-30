@@ -2,23 +2,27 @@ import Card from "./components/Card";
 import Tracker from "./components/Tracker";
 import SmallCard from "./components/SmallCard";
 
-async function getStreaks() {
-  const res = await fetch("https://bible.brinkley.dev/api/streaks", {
-    cache: "no-store",
-  });
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
+// async function getStreaks() {
+//   const res = await fetch("https://bible.brinkley.dev/api/streaks", {
+//     cache: "no-store",
+//   });
+//   // The return value is *not* serialized
+//   // You can return Date, Map, Set, etc.
 
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
-  }
+//   if (!res.ok) {
+//     // This will activate the closest `error.js` Error Boundary
+//     throw new Error("Failed to fetch data");
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
 
 export default async function Main() {
-  const streaks = await getStreaks();
+  // const streaks = await getStreaks();
+  const streaks = {
+    sara: { email: "saramhill30@gmail.com", streak: 0 },
+    brink: { streak: 0, email: "8brink@gmail.com" },
+  };
   return (
     <section className="grid h-[65svh] gap-2 px-5 font-bold">
       <Card />
